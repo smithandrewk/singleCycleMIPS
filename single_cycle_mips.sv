@@ -5,7 +5,6 @@ module single_cycle_mips (
     logic [31:0] pc, instr, readdata;
     logic [31:0] writedata, dataadr;
     logic       memwrite;
-    logic [31:0] pc, instr, readdata;
     
     // instantiate processor and memories
     mips mips(clk, rst_n, pc, instr, memwrite, dataadr,writedata, readdata);
